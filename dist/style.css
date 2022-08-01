@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(./kill-burger.jpg) no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: grid;
+  grid-template-rows: 45px 1fr;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 30px; */
+}
+
+/* NAV */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* NAV */
+
+/* INDEX */
+.indexHeader {
+  font-size: 8rem;
+}
+
+.indexBtn {
+  background-color: rgb(126, 7, 7);
+  padding: 10px 10px;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.indexBtn {
+  margin-top: 20px;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.indexBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.indexBtn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.indexBtn:hover span {
+  padding-right: 25px;
+}
+
+.indexBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* INDEX */
