@@ -8,6 +8,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  /* https://unsplash.com/photos/1Shk_PkNkNw */
   background: url(./kill-burger.jpg) no-repeat center fixed;
   background-size: cover;
   position: relative;
@@ -45,11 +46,11 @@ a:hover {
 /* NAV */
 
 /* INDEX */
-.indexHeader {
+.indexMainContent h1 {
   font-size: 8rem;
 }
 
-.indexBtn {
+.indexMainContent button {
   background-color: rgb(126, 7, 7);
   padding: 10px 10px;
   font-size: 2rem;
@@ -58,20 +59,20 @@ a:hover {
   color: rgb(255, 255, 255);
 }
 
-.indexBtn {
+.indexMainContent button {
   margin-top: 20px;
   padding: 10px 10px;
   text-align: center;
 }
 
-.indexBtn span {
+.indexMainContent button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.indexBtn span:after {
+.indexMainContent button span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -80,11 +81,11 @@ a:hover {
   transition: 0.5s;
 }
 
-.indexBtn:hover span {
+.indexMainContent button:hover span {
   padding-right: 25px;
 }
 
-.indexBtn:hover span:after {
+.indexMainContent button:hover span:after {
   opacity: 1;
   right: 0;
 }
