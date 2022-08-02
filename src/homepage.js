@@ -34,7 +34,9 @@ export default function loadHome(contentHook) {
   let header1 = document.createElement("h1");
   let header2 = document.createElement("h2");
   let btn = document.createElement("button");
+  btn.setAttribute("id", "services");
   let span = document.createElement("span");
+  span.setAttribute("id", "services");
   mainDiv.classList.add("indexMainContent");
   header1.textContent = "KILL BORGER";
   header2.textContent = "we kill bOrger";
