@@ -16,6 +16,9 @@ export default function loadMenu(contentHook) {
   home.textContent = "HOME";
   services.textContent = "SERVICES";
   about.textContent = "ABOUT";
+  home.setAttribute("id", "home");
+  services.setAttribute("id", "services");
+  about.setAttribute("id", "about");
 
   homeList.appendChild(home);
   servicesList.appendChild(services);
@@ -31,11 +34,12 @@ export default function loadMenu(contentHook) {
   let header1 = document.createElement("h1");
   let header2 = document.createElement("h2");
   let imag = document.createElement("img");
+  let price = document.createElement("h1");
 
   mainDiv.classList.add("menuMainContent");
   header1.textContent = "SERVICES";
   header2.setAttribute("style", "white-space: pre;");
-  header2.textContent = "Don't want your burger? \r\n Ok mine hehe";
+  header2.textContent = "Don't want your burger? \r\n mine now hehe";
   imag.src = "./eat-burger.gif";
 
   mainDiv.appendChild(header1);

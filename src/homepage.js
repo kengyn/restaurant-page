@@ -16,6 +16,9 @@ export default function loadHome(contentHook) {
   home.textContent = "HOME";
   services.textContent = "SERVICES";
   about.textContent = "ABOUT";
+  home.setAttribute("id", "home");
+  services.setAttribute("id", "services");
+  about.setAttribute("id", "about");
 
   homeList.appendChild(home);
   servicesList.appendChild(services);
