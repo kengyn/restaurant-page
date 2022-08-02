@@ -1,5 +1,6 @@
 import loadHome from "./homepage";
+import loadMenu from "./menu";
 
 let content = document.querySelector("#content");
 
-loadHome(content);
+loadMenu(content);

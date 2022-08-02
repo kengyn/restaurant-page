@@ -1,4 +1,4 @@
-export default function loadHome(contentHook) {
+export default function loadMenu(contentHook) {
   // NAV
   let navi = document.createElement("nav");
   let ulist = document.createElement("ul");
@@ -30,17 +30,18 @@ export default function loadHome(contentHook) {
   let mainDiv = document.createElement("div");
   let header1 = document.createElement("h1");
   let header2 = document.createElement("h2");
-  let btn = document.createElement("button");
-  let span = document.createElement("span");
-  mainDiv.classList.add("indexMainContent");
-  header1.textContent = "KILL BORGER";
-  header2.textContent = "we kill bOrger";
-  span.textContent = "KILL BORGER NOW";
+  let imag = document.createElement("img");
 
-  btn.appendChild(span);
+  mainDiv.classList.add("menuMainContent");
+  header1.textContent = "SERVICES";
+  header2.setAttribute("style", "white-space: pre;");
+  header2.textContent = "Don't want your burger? \r\n Ok mine hehe";
+  imag.src = "./eat-burger.gif";
+
   mainDiv.appendChild(header1);
   mainDiv.appendChild(header2);
-  mainDiv.appendChild(btn);
+  mainDiv.appendChild(imag);
+
   // MAIN CONTENT
 
   contentHook.appendChild(navi);
